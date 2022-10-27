@@ -13,7 +13,7 @@ class Main extends PluginBase
     public function onEnable(): void
     {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->saveResource();
+        $this->saveResource("config.yml");
     }
 
     public static function addMoney(Player $player, int $amount)
